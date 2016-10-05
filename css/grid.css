@@ -6,15 +6,19 @@
     width: 100%;
 }*/
 
-html, body {height: 100%}
+/*html, body {height: 100%}*/
 
-.row {
+.welcomefooter {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.row-inline {
-    flex-direction: row;
+.welcomefooterleft {
+    flex: 1;
+}
+
+.welcomefooterright {
+    flex: 1;
 }
 
 header {
@@ -44,27 +48,13 @@ header p {
 }
 
 .col {
-    flex: .3;
-    padding: 0 15px;
-    /*background-color: #075AFF;*/
-}
-
-.headerfooter {
-    flex-direction: row;
-    display: inline-block;
+    flex: 1;
 }
 
 .headerfooterimages img {
     width: 5%;
 }
 
-.headerfootertext {
-    text-align: left;
-}
-
-.headerfooterimages {
-    flex-direction: row;
-}
 
 #brand-bar {
     background: #075AFF;

@@ -2,53 +2,142 @@
     box-sizing: border-box;
 }
 
-/*img {
-    width: 100%;
-}*/
+.container {
 
-header {
-    flex-direction: column;
-    background-color: #075AFF;
+}
+
+.mainbox {
+    background-color: blue;
     text-align: center;
     color: white;
-    margin: 0 auto;
+}
+
+.mainbox img {
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 50px;
     /*margin-bottom: 20px;*/
 }
 
-header h6 {
+.mainbox h6 {
     color: #80A7F7;
-}
-
-header img {
-    margin-top: 30px;
-    border-radius: 50%;
-}
-
-header p {
-    font-weight: bold;
-    text-align: center;
 }
 
 .coffee {
     border: 3px solid white;
-    width: 33%;
-    margin: 0 auto;
-    padding-left: 5px;
-    text-align: left;
-    margin-bottom: 30px;
-    font-size: 10px;
+    word-wrap: normal;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-.coffee a {
-    text-decoration: none;
-    color: white;
+.row-inline {
+    flex-direction: row;
 }
 
-.coffee p {
-    text-align: center;
+.welcomefooter {
+    display: flex;
+    flex-direction: row;
 }
 
-.headerfooter {
-    width: 33%;
-    color: #80A7F7;
+.welcomefooterleft {
+    flex: 1;
 }
+
+.welcomefooterright {
+    flex: 1;
+}
+
+.welcomefooterright i {
+    margin-top: 21px;
+}
+
+.aboutmetitle {
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.aboutmebody {
+    margin-left: 5px;
+}
+
+.fa-angle-right {
+    color: blue;
+    margin-right: 10px;
+}
+
+.aboutmebody ul {
+    margin-left: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.pairshapedtitle {
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.pairshaped {
+    margin-left: 5px;
+}
+
+.suzukititle {
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.suzukibody {
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 555px) {
+    .container {
+        display: flex;
+    }
+    .bottomBox, .mainbox {
+        flex: 1;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+        .flexBox {
+        display: flex;
+    }
+    .aboutmetitle, .pairshapedtitle, .suzukititle {
+        flex: 1;
+    }
+    .aboutmebody, .pairshaped, .suzukibody {
+        flex: 3;
+        margin-top: 18px;
+    }
+
+    /*.flexBox, .aboutmetext, .bottomBox {
+        display: flex;
+    }
+    /*.aboutmetext {
+            display: flex;
+        }*/
+        /*.aboutmetitle, .pairshapedtitle {
+            flex: 1;
+        }
+        .aboutmebody, .pairshaped {
+            flex: 3;
+        }
+    }*
+
+
+
+
+/*@media screen and (min-width: 768px) {
+    .box {
+        background: yellow;
+    }
+}*/
